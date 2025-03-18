@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Modern Web <abbr title="User Interface">UI</abbr> Features</h1>
+    <details>
+        <summary>More Information</summary>
+        <p>This is the expanded view of the details element. This text only appears when the details element has been opened.</p>
+    </details>
+    
+    <button id="openmodal">😈</button>
+    <section id="hero">
+        <h2>Important Title Here</h2>
+        <p>FUCK YOU</p>
+        <a href="#">Click ME!</a>
+    </section>
+
+    <dialog id="modal">
+        <button id="closemodal">Bye Bye</button>
+       <p>Hello Mother fucker </p>
+    </dialog>
+
+    <script>
+        openmodal.addEventListener("click", function(){
+            console.Log("open button pressed")
+            modal.ShowModal()
+        })
+        closemodal.addEventListener("click",function(){
+            modal.close()
+        })
+    </script>
+</body>
+</html>
